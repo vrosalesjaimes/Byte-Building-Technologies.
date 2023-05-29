@@ -35,6 +35,7 @@ CREATE TABLE Platillo (
  descripcion text NOT NULL,
  imagen BYTEA
 );
+
 CREATE TABLE Tableta(
  id_Tableta VARCHAR(50) PRIMARY KEY,
  id_Encargado VARCHAR(50) REFERENCES Encargado_Tableta
