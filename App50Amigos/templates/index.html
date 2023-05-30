@@ -30,7 +30,7 @@
             <div class="logo">
                 <b class="bienvenido">Bienvenido</b>
                 <div class="div_logo">
-                    <img src="{% static 'assets/50amigos.png'%}" alt="">
+                    <img src="{% static 'assets/logos/50amigos.png'%}" alt="">
                 </div>
             </div>
             <div class="initial_form">
@@ -39,6 +39,36 @@
                 <div class= 'links'>
                     <a href="">Responsable de Tabletas</a>
                     <a href="">Administrador</a>
+                </div>
+            </div>
+            <div class="form_tablet">
+                <p class="login">Iniciar sesión</p>
+                <p class="ident">Encargado de Tabletas</p>
+                <form action="POST">
+                    {% csrf_token %}
+                    <input type="text" name="NumMesa" placeholder="Numero de mesa">
+                    <select name="ubicacion" id="">
+                        <option disabled selected>Ubicación</option>
+                        <option value="terraza">Terraza</option>
+                        <option value="jardin">Jardín</option>
+                        <option value="comedor">Comedor</option>
+                        <option value="balcon">Balcon</option>
+                    </select>
+                    <input type="password" name="id_Encargado", placeholder="Contraseña">
+                    <button class="iniciar">Iniciar sesión</button>
+                    <button class="return_initial_form">Elegir otro usuario</button>
+                </form>
+            </div>
+                <div class="form_admin">
+                    <p class="login">Iniciar sesión</p>
+                    <p class="ident">Administrador</p>
+                    <form action="POST">
+                        {% csrf_token %}
+                        <input type="text" name="NumEmpleado" placeholder="Usuario">
+                        <input type="password" name="Contrasenia" placeholder="Contraseña">
+                        <button class="iniciar">Iniciar sesión</button>
+                        <button class="return_initial_form">Elegir otro usuario</button>
+                    </form>
                 </div>
             </div>
         </section>
