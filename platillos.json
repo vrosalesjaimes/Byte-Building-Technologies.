@@ -1,0 +1,571 @@
+[
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Taco de pescado" ,
+        "id_Administrador": "A1",
+        "id_Menu": "M1",
+        "categoria": "Entrada",
+        "costo ": 103,
+        "descripcion": "Con Huevos Orgánicos (2 piezas, Queso Manchego, Cebolla, Chile Serrano y Frijoles Refritos.",
+        "imagen": "https://static.wixstatic.com/media/3d66da_f1608f669be24295bfba907ba41bb359~mv2.jpg/v1/crop/x_0,y_500,w_1080,h_616/fill/w_221,h_126,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Desayuno_Pecado_PEREZOSO_JPG.jpg ",     
+    }
+}
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Botanero" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Entrada",
+        "costo ": 56,
+        "descripcion": "Jícama, Zanahoria y Pepino con Limón, Sal y Chile Piquín.",
+        "imagen": " https://static.wixstatic.com/media/3d66da_001295dd15a148e79cab31fffac329a2~mv2.png/v1/crop/x_95,y_0,w_532,h_532/fill/w_144,h_144,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Botanero.png",     
+    }
+}
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Mona Lisa" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Entrada",
+        "costo ": 122,
+        "descripcion": "Queso de cabra, manzana, nuez caramelizada.",
+        "imagen": " https://static.wixstatic.com/media/3d66da_d8e9fa77943e4c4f831d5268ea35aa36~mv2.jpg/v1/crop/x_0,y_268,w_1080,h_1080/fill/w_105,h_105,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/6_Delicias_MONALISA_JPG.jpg",     
+    }
+}
+
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Paraíso" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Entrada",
+        "costo ": 112,
+        "descripcion": "Mango* o Durazno*, Manzana, Espinaca, Nuez Caramelizada.",
+        "imagen": "https://static.wixstatic.com/media/3d66da_7bd9779f71454c01a8b7c7f1024a02f3~mv2.jpg/v1/crop/x_0,y_268,w_1080,h_1080/fill/w_105,h_105,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/4_Delicias_PARAISO_JPG_JPG.jpg",     
+    }
+}
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Neptuno" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Entrada",
+        "costo ": 119,
+        "descripcion": "Atún, Aguacate, Jitomate Cherry, Lechuga Orejona, Sal, Pimienta.",
+        "imagen": "https://static.wixstatic.com/media/3d66da_99597508cf424cf2a11a88d85991d7f9~mv2.jpg/v1/crop/x_0,y_268,w_1080,h_1080/fill/w_105,h_105,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/3_Delicias_NEPTUNO_JPG.jpg",     
+    }
+}
+
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Eva" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Entrada",
+        "costo ": 129,
+        "descripcion": "Queso Brie, Pera de Anjou, Dátil, Nuez.",
+        "imagen": "https://static.wixstatic.com/media/3d66da_26988b25b2f0418a936089310b7ad031~mv2.jpg/v1/crop/x_0,y_268,w_1080,h_1080/fill/w_105,h_105,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/1_Delicias_EVA_JPG.jpg",     
+    }
+}
+
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Venus" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Entrada",
+        "costo ": 115,
+        "descripcion": "Queso de Cabra, Aguacate, Jitomate Cherry, Sal, Pimienta.",
+        "imagen": "https://static.wixstatic.com/media/3d66da_047e7e3707634d4b8e95a698cd199460~mv2.jpg/v1/crop/x_0,y_268,w_1080,h_1080/fill/w_105,h_105,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/5_Delicias_VENUS_JPG.jpg",     
+    }
+}
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Menina" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Entrada",
+        "costo ": 125,
+        "descripcion": "Parmesano, jícama, espinaca, pechuga de pavo 45 gr, arándanos.",
+        "imagen": "https://static.wixstatic.com/media/3d66da_ac7ab00e72c1427696214dcaf9b77b2b~mv2.jpg/v1/crop/x_0,y_268,w_1080,h_1080/fill/w_105,h_105,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/7_Delicias_MENINA_JPG.jpg",     
+    }
+}
+
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Khaleesi" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Entrada",
+        "costo ": 116,
+        "descripcion": "Kale, espinaca, q. de cabra, aguacate, pepino, dátiles y semillas de girasol.",
+        "imagen": "https://static.wixstatic.com/media/3d66da_218645f4fa11424882a159c8ca0670b1~mv2.jpg/v1/crop/x_0,y_268,w_1080,h_1080/fill/w_105,h_105,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/8_Delicias_KHALEESI_JPG.jpg",     
+    }
+}
+
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Dante" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Plato Fuerte",
+        "costo ": 116,
+        "descripcion": "Mozzarella fresco, Pesto, Jitomate, Aguacate.",
+        "imagen": "https://static.wixstatic.com/media/3d66da_bdc46beb49684f359c9c9cd6eab18b69~mv2.jpg/v1/crop/x_0,y_268,w_1080,h_1080/fill/w_105,h_105,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/2_Pecado_DANTE_JPG.jpg",     
+    }
+}
+
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Mortal" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Plato Fuerte",
+        "costo ": 126,
+        "descripcion": "Chorizo de Pamplona (25gr), Salami (25gr) y Queso Manchego.",
+        "imagen": "https://static.wixstatic.com/media/3d66da_ca6eea7b414f4c1aa43921b20b46c318~mv2.jpg/v1/crop/x_0,y_268,w_1080,h_1080/fill/w_105,h_105,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/3_Pecado_MORTAL_JPG.jpg",     
+    }
+}
+
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Guerra" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Plato Fuerte",
+        "costo ": 122,
+        "descripcion": "Pastrami de res (45gr), Provolone y Gravy de la Casa.",
+        "imagen": "https://static.wixstatic.com/media/3d66da_9e76a74de8974324ac2c06f5a554f920~mv2.jpg/v1/crop/x_0,y_268,w_1080,h_1080/fill/w_105,h_105,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/4_Pecado_GUERRA_JPG.jpg",     
+    }
+}
+
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Sexenal" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Plato Fuerte",
+        "costo ": 134,
+        "descripcion": "Queso Crema, de Cabra, Brie, Manchego y Mozzarella.",
+        "imagen":"https://static.wixstatic.com/media/3d66da_bebcf3b2559c4ca5b094efa1fae31d9b~mv2.jpg/v1/crop/x_0,y_268,w_1080,h_1080/fill/w_105,h_105,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/5_Pecado_SEXENAL_JPG.jpg",     
+    }
+}
+
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Capital" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Plato Fuerte",
+        "costo ": 132,
+        "descripcion": "Jamón Serrano (45gr), y Queso Brie.",
+        "imagen":"https://static.wixstatic.com/media/3d66da_e915060f36d5476d8392b20f4212481e~mv2.jpg/v1/crop/x_0,y_268,w_1080,h_1080/fill/w_105,h_105,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/6_Pecado_CAPITAL_JPG.jpg",     
+    }
+}
+
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Amor" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Plato Fuerte",
+        "costo ": 132,
+        "descripcion": "Salmón Ahumado (50gr), Queso Crema, Cebolla, Alcaparras y Limón.",
+        "imagen":"https://static.wixstatic.com/media/3d66da_d2d1c17b2ed34396ac00dee58245d21e~mv2.jpg/v1/crop/x_0,y_268,w_1080,h_1080/fill/w_105,h_105,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/7_Pecado_AMOR_JPG.jpg",     
+    }
+}
+
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Amor supremo" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Plato Fuerte",
+        "costo ": 133,
+        "descripcion": "Salmón Ahumado (50gr), Queso de Cabra y Ajonjolí Caramelizado.",
+        "imagen":"https://static.wixstatic.com/media/3d66da_c7df005ea2d346c895cc8b9e2410b57f~mv2.jpg/v1/crop/x_0,y_268,w_1080,h_1080/fill/w_105,h_105,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/9_Pecado_AMORSUPREMO_JPG.jpg",     
+    }
+}
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Paz exterior" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Plato Fuerte",
+        "costo ": 137,
+        "descripcion": "Jamón de Pierna (45gr), Manchego, Cebolla Caramelizada, Serrano, Arándanos, Romero.",
+        "imagen":"https://static.wixstatic.com/media/3d66da_e6f2d63aa5f247d8a7d83b987da47273~mv2.jpg/v1/crop/x_0,y_268,w_1080,h_1080/fill/w_105,h_105,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/10_Pecado_PECADODEPAZ_JPG.jpg",     
+    }
+}
+
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Gaia" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Bebida",
+        "costo ": 79,
+        "descripcion": "Hemp, Mango, Berries, Leche de Almendra.",
+        "imagen": "https://static.wixstatic.com/media/3d66da_b4c22d17bf644988b71466ae2ab56a32~mv2.png/v1/fill/w_35,h_61,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/FrutosProhibidos_Bebidas__2880x2340__0022_FresaMenta.png",     
+    }
+}
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Avispón verde" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Bebida",
+        "costo ": 65	,
+        "descripcion": "Naranja, Chaya, Apio, Piña, Perejil, Nopal.",
+        "imagen": "https://static.wixstatic.com/media/3d66da_4b56d735e163473f8a76425252c0da8a~mv2.png/v1/fill/w_53,h_92,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/FrutosProhibidos_Bebidas__2880x2340__0001_FrutosProhibidos_AvisponVerde.png",     
+    }
+}
+
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Naranja mecanica" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Bebida",
+        "costo ": 63,
+        "descripcion": "Naranja, Plátano, Vainilla, Canela.",
+        "imagen": "https://static.wixstatic.com/media/3d66da_fced0352436146828f9bdad9391ae418~mv2.png/v1/fill/w_35,h_61,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/FrutosProhibidos_Bebidas__2880x2340__0011_NaranjaMecanica.png",     
+    }
+}
+
+
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Elvis" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Bebida",
+        "costo ": 63,
+        "descripcion": "Fresa, Naranja, Yogurt, Miel.",
+        "imagen": "https://static.wixstatic.com/media/3d66da_afc7d6751d6f43d2ab71ed46a833ebfa~mv2.png/v1/fill/w_35,h_61,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/FrutosProhibidos_Bebidas__2880x2340__0024_Elvis.png",     
+    }
+}
+
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Godzilla" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Bebida",
+        "costo ": 62,
+        "descripcion": "Naranja, Toronja, Chaya, Espirulina.",
+        "imagen": "https://static.wixstatic.com/media/3d66da_ee8253ccbdbc4e23ad1ddadfe43ae2ba~mv2.png/v1/fill/w_35,h_61,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/FrutosProhibidos_Bebidas__2880x2340__0018_Godzilla.png",     
+    }
+}
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Momo" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Bebida",
+        "costo ": 72,
+        "descripcion": "Cardamomo, Berries, Naranja, Mango.",
+        "imagen": "https://static.wixstatic.com/media/3d66da_ee8253ccbdbc4e23ad1ddadfe43ae2ba~mv2.png/v1/fill/w_35,h_61,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/FrutosProhibidos_Bebidas__2880x2340__0018_Godzilla.png",     
+    }
+}
+
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Coco chanel" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Bebida",
+        "costo ": 60,
+        "descripcion": "Cocoa, Plátano, Leche.",
+        "imagen": "https://static.wixstatic.com/media/3d66da_50e26ac64c58442399a401414d0097d7~mv2.png/v1/fill/w_53,h_92,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/FrutosProhibidos_Bebidas__2880x2340__0026_CocoaChanel.png",     
+    }
+}
+
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Afrodita" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Bebida",
+        "costo ": 70,
+        "descripcion": "Helado de fresas, Plátano, Fresas, Leche, Canela, Miel.",
+        "imagen": "https://static.wixstatic.com/media/3d66da_d0840e23d6bb429caa662430d548e49f~mv2.png/v1/fill/w_53,h_92,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/FrutosProhibidos_Bebidas__2880x2340__0030_Afrodita.png",     
+    }
+}
+
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Marilin Monroe" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Bebida",
+        "costo ": 68,
+        "descripcion": "Mango*, Naranja, Yogurt, Miel.",
+        "imagen": "https://static.wixstatic.com/media/3d66da_813f457d10b0487cb0cb634726bab7e1~mv2.png/v1/fill/w_53,h_92,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/FrutosProhibidos_Bebidas__2880x2340__0015_MarylinMonroe.png",     
+    }
+}
+
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Petunia" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Bebida",
+        "costo ": 65,
+        "descripcion": "Fresa, Mandarina, Menta.",
+        "imagen": "https://static.wixstatic.com/media/3d66da_ef63533fb97b4d4799f9908eb224b98b~mv2.png/v1/fill/w_53,h_92,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/FrutosProhibidos_Bebidas__2880x2340__0008_Petunia.png",     
+    }
+}
+
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Acai" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Postre",
+        "costo ": 90,
+        "descripcion": "Acai, Berries, Plátano, Mango* y Leche de Coco.",
+        "imagen": "https://static.wixstatic.com/media/3d66da_d7812b7c2a2f481790f5b32f88493bc8~mv2.png/v1/crop/x_46,y_155,w_670,h_669/fill/w_144,h_144,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Bowl_Acai.png ",     
+    }
+}
+
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Chia y matcha" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Postre",
+        "costo ": 90,
+        "descripcion": "Chia, Matcha, Mango*, Fresa, Kiwi_Blueberry y Leche De Coco.",
+        "imagen": "https://static.wixstatic.com/media/3d66da_a634b6dbba70433688b54400b30f260a~mv2.png/v1/crop/x_140,y_0,w_512,h_512/fill/w_144,h_144,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Bowl_Chia_Matcha.png ",     
+    }
+}
+
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Mango y mamey" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Postre",
+        "costo ": 94,
+        "descripcion": "Mamey, Mango*, Blueberry, Coco, Plátano, Chia.",
+        "imagen": "https://static.wixstatic.com/media/3d66da_cef8dfcdf2124109a78535d4025fb638~mv2.jpg/v1/crop/x_176,y_387,w_814,h_814/fill/w_144,h_144,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/FrutosProhibidos_Bowl_MangoMamey_2480x1860_edited.jpg",     
+    }
+}
+
+
+
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Crepa de fresa" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Postre",
+        "costo ": 82,
+        "descripcion": "Nutella, Fresas, Plátano, Queso Crema, Hershey’s y Nuez.",
+        "imagen": " https://static.wixstatic.com/media/3d66da_2ab6ebb5c06348b5875e34a4c744ad9c~mv2.png/v1/crop/x_0,y_199,w_960,h_546/fill/w_221,h_126,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Pecado_Celestial.png",     
+    }
+}
+
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Crepa de cajeta" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Postre",
+        "costo ": 82,
+        "descripcion": "Manzana, Miel, Queso Crema, Nuez Caramelizada y Canela.",
+        "imagen": " https://static.wixstatic.com/media/3d66da_5fcf7bfce1584cbbbb6fcbb7754455db~mv2.png/v1/crop/x_15,y_0,w_1459,h_832/fill/w_221,h_126,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Pecado_Angelical.png",     
+    }
+}
+
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Fresas con crema" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Postre",
+        "costo ": 75,
+        "descripcion": "Fresas con Crema, Azúcar y Canela.",
+        "imagen": " https://static.wixstatic.com/media/3d66da_1df41a76e8fd4f4c9278469ddbfb7b11~mv2.png/v1/crop/x_0,y_327,w_916,h_522/fill/w_221,h_126,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Fresas_Crema.png",     
+    }
+}
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Platanos con crema" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Postre",
+        "costo ": 75,
+        "descripcion": "Plátano con Crema, Azúcar y Canela.",
+        "imagen": " https://static.wixstatic.com/media/3d66da_8eb7c161dc7d4928bd92ba43f2fef735~mv2.png/v1/crop/x_0,y_315,w_1028,h_586/fill/w_221,h_126,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Platanos_Crema.png",     
+    }
+}
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Combinado de frutas" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Postre",
+        "costo ": 73,
+        "descripcion": "Melón, Sandía, Mango*, Plátano, Fresa, Uva. Incluye Yogurt, Granola y Miel.",
+        "imagen": "https://static.wixstatic.com/media/3d66da_93121878759c478193ee9bf70f43da3b~mv2.jpg/v1/crop/x_211,y_424,w_656,h_656/fill/w_144,h_144,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/FPYOP_ProductShot_pendiente_15sep22_assets_0010_Combinado_Plato.jpg",     
+    }
+}
+
+
+
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Chocomenta" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Helado",
+        "costo ": 46,
+        "descripcion": "Sabor chocomenta.",
+        "imagen": "https://assets.tmecosys.com/image/upload/t_web600x528/img/recipe/ras/Assets/5B36FEF5-05DE-4E50-AD51-0EE543121D7F/Derivates/0B4F98E3-6C69-480A-AB48-50901E4DBCF0.jpg",     
+    }
+}
+
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Vainilla" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Helado",
+        "costo ": 40,
+        "descripcion": "Sabor vainilla.",
+        "imagen": "https://www.comedera.com/wp-content/uploads/2022/05/Helado-de-vainilla-sin-azucar.jpg",     
+    }
+}
+
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Galleta" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Helado",
+        "costo ": 40,
+        "descripcion": "Sabor galleta.",
+        "imagen": "https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2020/04/Helado-de-oreo-casero.jpg",     
+    }
+}
+
+
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Ron con pasas" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Helado",
+        "costo ": 40,
+        "descripcion": "Sabor ron con pasas.",
+        "imagen": "juanideanasevilla.com/archivos/recetas/380786a2ef2654855b5f3ffb1a011340ac89ee22.jpg",     
+    }
+}
+
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Pistache" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Helado",
+        "costo ": 40,
+        "descripcion": "Sabor pistache.",
+        "imagen": "https://d1kxxrc2vqy8oa.cloudfront.net/wp-content/uploads/2020/08/13210448/RFB-0907-2-Heladodepistacho.jpg",     
+    }
+}
+
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Turron" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Helado",
+        "costo ": 40,
+        "descripcion": "Sabor turron.",
+        "imagen": "https://i.blogs.es/efdaa4/Helado_turron/1366_2000.jpg",     
+    }
+}
+
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Fresa" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Helado",
+        "costo ": 40,
+        "descripcion": "Sabor fresa.",
+        "imagen": "https://imagenes.elpais.com/resizer/kG1TadgbHsw81NH_K0ouCtltp5c=/1960x1103/cloudfront-eu-central-1.images.arcpublishing.com/prisa/V2TRGWUN4VMXJODRBQSVU4Q2GY.jpg",     
+    }
+}
+
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Caramelo" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Helado",
+        "costo ": 40,
+        "descripcion": "Sabor caramelo.",
+        "imagen": "https://www.recetasnestle.com.mx/sites/default/files/styles/recipe_detail_desktop/public/srh_recipes/0dab240b11a0005630a3529ca06a5c17.jpg?itok=jFv2m6es",     
+    }
+}
+{
+    "model": "App50Amigos.Platillo",
+    "fields": {
+        "id_Platillo": "Chocolate" ,
+        "id_Administrador":"A1",
+        "id_Menu": "M1",
+        "categoria": "Helado",
+        "costo ": 40,
+        "descripcion": "Sabor chocolate.",
+        "imagen": "https://www.cocinista.es/download/bancorecursos/recetas/receta-Helado-chocolate.jpg",     
+    }
+}
+
+
+]
