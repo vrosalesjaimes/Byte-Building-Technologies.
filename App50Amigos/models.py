@@ -71,3 +71,4 @@ class Estar(models.Model):
         if self.id_Mesa:
             self.ubicacion = self.id_Mesa.ubicacion
         super().save(*args, **kwargs)
+
