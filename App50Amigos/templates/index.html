@@ -1,82 +1,85 @@
 {%load static %}
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>50 Amigos - Bienvenido</title>
-        <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
-        <link rel="icon" type="image/x-icon" href="{% static 'assets/favicon.ico '%}" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="{% static 'css/index.css'%}" rel="stylesheet" />
-    </head>
-    <body>
-        <header>
-            <div>
-                <img src="{% static 'assets/Cinta/molletes.webp' %}" alt="">
-                <img src="{% static 'assets/Cinta/Chilaquiles.webp' %}" alt="">
-                <img src="{% static 'assets/Cinta/Pecado_Angelical.webp' %}" alt="">
-                <img src="{% static 'assets/Cinta/pecado.webp' %}" alt="">
-                <img src="{% static 'assets/Cinta/Platanos_Crema.webp' %}" alt="">
-                <img src="{% static 'assets/Cinta/Pecado_Aquiles.webp' %}" alt="">
-                <img src="{% static 'assets/Cinta/Pecado_Celestial.webp' %}" alt="">
-                <img src="{% static 'assets/Cinta/fresas.webp' %}" alt="">
-                <img src="{% static 'assets/Cinta/Mango_mamey.webp' %}" alt="">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>50 Amigos - Bienvenido</title>
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="{% static 'assets/favicon.ico '%}" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{% static 'css/index.css'%}" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="{% static 'assets/Cinta/molletes.webp' %}" alt="">
+            <img src="{% static 'assets/Cinta/Chilaquiles.webp' %}" alt="">
+            <img src="{% static 'assets/Cinta/Pecado_Angelical.webp' %}" alt="">
+            <img src="{% static 'assets/Cinta/pecado.webp' %}" alt="">
+            <img src="{% static 'assets/Cinta/Platanos_Crema.webp' %}" alt="">
+            <img src="{% static 'assets/Cinta/Pecado_Aquiles.webp' %}" alt="">
+            <img src="{% static 'assets/Cinta/Pecado_Celestial.webp' %}" alt="">
+            <img src="{% static 'assets/Cinta/fresas.webp' %}" alt="">
+            <img src="{% static 'assets/Cinta/Mango_mamey.webp' %}" alt="">
+        </div>
+    </header>
+    <section class="content">
+        <div class="logo">
+            <b class="bienvenido">Bienvenido</b>
+            <div class="div_logo">
+                <img src="{% static 'assets/logos/50amigos.png'%}" alt="">
             </div>
-        </header>
-        <section class="content">
-            <div class="logo">
-                <b class="bienvenido">Bienvenido</b>
-                <div class="div_logo">
-                    <img src="{% static 'assets/logos/50amigos.png'%}" alt="">
-                </div>
+        </div>
+        <div class="initial_form" id="initial_form">
+            <p class="login">Iniciar sesión</p>
+            <p class="ident">Soy:</p>
+            <div class='links'>
+                <button id="encargado">Responsable de Tabletas</button>
+                <button id="admin">Administrador</button>
             </div>
-            <div class="initial_form">
-                <p class="login">Iniciar sesión</p>
-                <p class="ident">Soy:</p>
-                <div class= 'links'>
-                    <a href="">Responsable de Tabletas</a>
-                    <a href="">Administrador</a>
-                </div>
-            </div>
-            <div class="form_tablet">
-                <p class="login">Iniciar sesión</p>
-                <p class="ident">Encargado de Tabletas</p>
-                <form action="POST">
-                    {% csrf_token %}
-                    <input type="text" name="NumMesa" placeholder="Numero de mesa">
-                    <select name="ubicacion" id="">
-                        <option disabled selected>Ubicación</option>
-                        <option value="terraza">Terraza</option>
-                        <option value="jardin">Jardín</option>
-                        <option value="comedor">Comedor</option>
-                        <option value="balcon">Balcon</option>
-                    </select>
-                    <input type="password" name="id_Encargado", placeholder="Contraseña">
-                    <button class="iniciar">Iniciar sesión</button>
-                    <button class="return_initial_form">Elegir otro usuario</button>
-                </form>
-            </div>
-                <div class="form_admin">
-                    <p class="login">Iniciar sesión</p>
-                    <p class="ident">Administrador</p>
-                    <form action="POST">
-                        {% csrf_token %}
-                        <input type="text" name="NumEmpleado" placeholder="Usuario">
-                        <input type="password" name="Contrasenia" placeholder="Contraseña">
-                        <button class="iniciar">Iniciar sesión</button>
-                        <button class="return_initial_form">Elegir otro usuario</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-        <footer>
-            <p>
-                Byte Building Tecnologies. Derechos reservados 2023.
-            </p>
-        </footer>
-    </body>    
-    <script src="{% static 'js/index.js'%}"></script>
+        </div>
+
+        <div class="form_tablet" id="form_tablet">
+            <p class="login">Iniciar sesión</p>
+            <p class="ident">Encargado de Tabletas</p>
+            <form action="POST">
+                {% csrf_token %}
+                <input type="text" name="NumMesa" placeholder="Numero de mesa">
+                <select name="ubicacion" id="">
+                    <option disabled selected>Ubicación</option>
+                    <option value="terraza">Terraza</option>
+                    <option value="jardin">Jardín</option>
+                    <option value="comedor">Comedor</option>
+                    <option value="balcon">Balcon</option>
+                </select>
+                <input type="password" name="id_Encargado" , placeholder="Contraseña">
+                <button class="iniciar">Iniciar sesión</button>
+            </form>
+            <button class="return_initial_form">Elegir otro usuario</button>
+        </div>
+        <div class="form_admin" id="form_admin">
+            <p class="login">Iniciar sesión</p>
+            <p class="ident">Administrador</p>
+            <form action="POST">
+                {% csrf_token %}
+                <input type="text" name="NumEmpleado" placeholder="Usuario">
+                <input type="password" name="Contrasenia" placeholder="Contraseña">
+                <button class="iniciar">Iniciar sesión</button>
+            </form>
+            <button class="return_initial_form">Elegir otro usuario</button>
+        </div>
+    </section>
+    <footer>
+        <p>
+            Byte Building Tecnologies. Derechos reservados 2023.
+        </p>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script src="{% static 'js/index.js'%}"></script>
 </html>
