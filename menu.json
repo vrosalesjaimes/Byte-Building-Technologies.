@@ -1,0 +1,9 @@
+[
+    {
+        "model": "App50Amigos.Menu",
+        "fields": {
+            "id_Menu": 1,
+            "id_Admin": 1
+        }
+    }
+]

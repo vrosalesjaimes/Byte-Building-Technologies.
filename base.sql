@@ -23,7 +23,7 @@ CREATE TABLE Encargado_Tableta (
 
 CREATE TABLE Menu(
  id_Menu VARCHAR(50) PRIMARY KEY,
- id_Administrador VARCHAR(50) REFERENCES Administrador
+ id_Admin VARCHAR(50) REFERENCES Administrador
 );
 
 CREATE TABLE Platillo (
@@ -31,6 +31,7 @@ CREATE TABLE Platillo (
  id_Administrador VARCHAR (50)REFERENCES administrador,
  id_menu VARCHAR(50) REFERENCES Menu,
  categoria categoria ,
+ nombre VARCHAR(50) NOT NULL,
  costo int,
  descripcion text NOT NULL,
  imagen BYTEA

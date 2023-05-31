@@ -69,7 +69,8 @@
                 {% csrf_token %}
                 <input type="text" name="NumEmpleado" placeholder="Usuario">
                 <input type="password" name="Contrasenia" placeholder="Contraseña">
-                <button class="iniciar">Iniciar sesión</button>
+                <button type="iniciar"><a  href="{% url 'App50Amigos:P1'%}">Iniciar sesión</a></button>
+                
             </form>
             <button class="return_initial_form">Elegir otro usuario</button>
         </div>

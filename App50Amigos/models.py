@@ -17,20 +17,22 @@ class Encargado_Tableta(models.Model):
     contrasenia = models.CharField(max_length=500)
 
 class Menu(models.Model):
-    id_menu = models.AutoField(primary_key=True)
-    id_Adminustrador = models.ForeignKey(Administrador, on_delete=models.SET_NULL, null=True)
+    id_Menu = models.AutoField(primary_key=True)
+    id_Admin = models.ForeignKey(Administrador, on_delete=models.SET_NULL, null=True)
 
 class Platillo(models.Model):
     CATEGORIA = (
         ('entrada', 'Entrada'),
         ('plato_fuerte', 'Plato Fuerte'),
         ('postre', 'Postre'),
+        ('bebida', 'Bebida'),
         ('helado', 'Helado'),
     )
     id_Platillo = models.AutoField(primary_key=True)
     id_Administrador = models.ForeignKey(Administrador, on_delete=models.SET_NULL, null=True)
     id_Menu = models.ForeignKey(Menu, on_delete=models.SET_NULL, null=True)
     categoria = models.CharField(max_length=20, choices=CATEGORIA)
+    nombre = models.CharField(default = 0, max_length= 20)
     costo = models.IntegerField(default=0, max_length=5)
     descripcion = models.TextField()
     imagen = models.CharField(max_length=1000)

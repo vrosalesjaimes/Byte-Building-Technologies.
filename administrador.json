@@ -1,0 +1,13 @@
+[
+    {
+        "model": "App50Amigos.Administrador",
+        "fields": {
+            "id_Administrador": "1",
+            "nombre": "Cesar E.",
+            "apellidoP": "Jardines",
+            "apellidoM": "Mendoza",
+            "edad": 24,
+            "contrasenia": "menu1"
+    }
+}
+]
