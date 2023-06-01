@@ -18,11 +18,11 @@ from django.urls import path
 from . import views
 from django.conf import settings
 
-app_name = '50 Amigos'
+app_name = 'App50Amigos'
 
 urlpatterns = [
    path('admin/', admin.site.urls),
    path('', views.index, name='index'),
-   path('nuevaPagina/',views.paginaUno, name='P1'),
+   path('nuevaPagina/', views.paginaUno, name='P1'),
    path('registro/', views.registro, name = 'registro')
 ]
