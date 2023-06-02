@@ -42,7 +42,7 @@ class Tableta(models.Model):
     id_Encargado = models.ForeignKey(Encargado_Tableta, on_delete=models.SET_NULL, null=True)
 
 class Orden(models.Model):
-    id_Orden = models.AutoField(primary_key=True)
+    id_Orden = models.IntegerField(primary_key=True)
     id_Tableta = models.ForeignKey(Tableta, on_delete=models.SET_NULL, null=True)
 
 class Ordenar(models.Model):

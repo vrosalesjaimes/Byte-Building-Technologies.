@@ -24,10 +24,11 @@ app_name = 'App50Amigos'
 urlpatterns = [
    path('', views.index, name='index'),
    path('administrador/', views.panelAdmin, name='panel_admin'),
-   path('usuario/', views.panelUser, name='panel_user'),
+   path('usuario/<int:id_tableta>/<int:num_mesa>/<str:ubicacion>/<int:id_order>/',
+        views.panelUser, name='panel_user'),
    path('carrito/', views.carrito, name='carrito'),
    path('votación', views.votacion, name='votacion'),
    path('registro/', views.registro, name = 'registro'),
-   path('bienvenida/', views.fondo, name='bienvenida')
+   path('bienvenida/<int:id_tableta>/<int:num_mesa>/<str:ubicacion>/', views.fondo, name='bienvenida')
    #path('asignacion_mesa/<parametros>')
 ]

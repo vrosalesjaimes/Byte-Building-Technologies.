@@ -19,10 +19,11 @@
         <div class="logo">
             <img src="{% static 'assets/logos/50amigos_negativo.png'%}" alt="">
         </div>
-        <div class="initial_form" id="initial_form">
+        <form class="initial_form" id="initial_form" method="POST">
+            {% csrf_token %}
             <p class="welcome">Bienvenidos</p>
-            <a class="order" href="{% url 'App50Amigos:panel_user'%}">Ordenar</a>
-        </div>
+            <button type="submit" class="order">Ordenar</button>
+        </form>
 </body>
 <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 <script src="{% static 'js/index.js'%}"></script>
