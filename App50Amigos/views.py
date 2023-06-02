@@ -12,9 +12,11 @@ def index(request):
     return render(request,'index.html')
 
 
-def paginaUno(request):
+def panelAdmin(request):
+    return render(request, 'panel_admin.html')
 
-    return render(request, 'Pagina1.html')
+def panelUser(request):
+    return render(request, 'panel_user.html')
 
 def registro(request):
     data = {

@@ -21,8 +21,8 @@ from django.conf import settings
 app_name = 'App50Amigos'
 
 urlpatterns = [
-   path('admin/', admin.site.urls),
    path('', views.index, name='index'),
-   path('nuevaPagina/', views.paginaUno, name='P1'),
+   path('administrador/', views.panelAdmin, name='panel_admin'),
+   path('usuario/', views.panelUser, name='panel_user'),
    path('registro/', views.registro, name = 'registro')
 ]

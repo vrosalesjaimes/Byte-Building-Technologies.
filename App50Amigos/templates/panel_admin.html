@@ -1,0 +1,68 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>50 Amigos - Bienvenido</title>
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="{% static 'assets/favicon.ico '%}" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{% static 'css/panel_admin.css'%}" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/d5b36fd0cc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <p>Administrador Nombre</p>
+            <img class="logo_img" src="{% static 'assets/logos/50amigos.png'%}" alt="">
+        </div>
+        <div class="panel_center">
+            <div class="top_table">
+                <form class="buscador" action="">
+                    <input class="search_text" type="text" placeholder="Buscar platillo">
+                    <button>
+                        <img class="search_button" src="{% static 'assets/icon/search.png'%}">
+                    </button>
+                </form>
+                <button class="button_panel">
+                    <p>Cerrar sesión</p>
+                </button>
+            </div>
+            <div class="message_admin">
+                <p class="admin_title">Bienvenido de nuevo, Nombre</p>
+                <p class="question">Elige una categoria para empezar o busca un platillo especifico.</p>
+            </div>
+        </div>
+    </header>
+    <section class="content">
+        <div class="category_card">
+            <p>Entradas</p>
+            <img src="{% static 'assets/categories/entrada.jpg'%}" alt="">
+        </div>
+        <div class="category_card">
+            <p>Platos <br> principales</p>
+            <img src="{% static 'assets/categories/plato_fuerte.jpg' %}" alt="">
+        </div>
+        <div class="category_card">
+            <p>Bebidas</p>
+            <img src="{% static 'assets/categories/bebidas.jpg' %}" alt="">
+        </div>
+        <div class="category_card">
+            <p>Postres</p>
+            <img src="{% static 'assets/categories/postre.jpg' %}" alt="">
+        </div>
+        <div class="category_card">
+            <p>Helados</p>
+            <img src="{% static 'assets/categories/helado.jpg' %}" alt="">
+        </div>
+    </section>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script src="{% static 'js/index.js'%}"></script>
+
+</html>
