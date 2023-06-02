@@ -6,17 +6,52 @@ from django.contrib import messages
 from .forms import CustomUserCreationForm
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
+from .models import *
+from .funcionalidades import *
 # Create your views here.
+
+
 def index(request):
-    
+    if request.method == 'POST':
+        num_mesa = request.POST.get('NumMesa')
+        ubicacion = request.POST.get('ubicacion')
+        id_encargado = request.POST.get('id_Encargado')
+        id_tableta = request.POST.get('id_tableta')
+        print(num_mesa, ubicacion, id_tableta, id_encargado)
+        return redirect('App50Amigos:bienvenida')
+
     return render(request,'index.html')
 
+def fondo(request):
+    return render(request, 'fondo.html')
 
 def panelAdmin(request):
-    return render(request, 'panels/panel_admin.html')
+    entradas = Platillo.objects.filter(categoria='Entrada')
+    platos_fuerte = Platillo.objects.filter(categoria='Plato Fuerte')
+    bebidas = Platillo.objects.filter(categoria='Bebida')
+    postre = Platillo.objects.filter(categoria='Postre')
+    helado = Platillo.objects.filter(categoria='Helado')
+    return render(request, 'panels/panel_admin.html', {'entradas': entradas,
+                                                       'platos_fuertes': platos_fuerte,
+                                                       'bebidas': bebidas,
+                                                       'postre': postre,
+                                                       'helado': helado})
 
 def panelUser(request):
-    return render(request, 'panels/panel_user.html')
+    entradas = Platillo.objects.filter(categoria='Entrada')
+    platos_fuerte= Platillo.objects.filter(categoria='Plato Fuerte')
+    bebidas = Platillo.objects.filter(categoria='Bebida')
+    postre = Platillo.objects.filter(categoria='Postre')
+    return render(request, 'panels/panel_user.html',  {'entradas': entradas,
+                                                       'platos_fuertes': platos_fuerte,
+                                                       'bebidas': bebidas,
+                                                       'postre': postre})
+
+def carrito(request):
+    return render(request, 'panels/pedido.html')
+
+def votacion(request):
+    return render(request, 'panels/votacion.html')
 
 def registro(request):
     data = {

@@ -5,7 +5,7 @@ class Administrador(models.Model):
     nombre = models.CharField(max_length=200)
     apellidoP = models.CharField(max_length=200)
     apellidoM = models.CharField(max_length=200)
-    edad = models.IntegerField(default=0, max_length=3)
+    edad = models.IntegerField(default=0)
     contrasenia = models.CharField(max_length=500)
 
 class Encargado_Tableta(models.Model):
@@ -13,7 +13,7 @@ class Encargado_Tableta(models.Model):
     nombre = models.CharField(max_length=200)
     apellidoP = models.CharField(max_length=200)
     apellidoM = models.CharField(max_length=200)
-    edad = models.IntegerField(default=0, max_length=3)
+    edad = models.IntegerField(default=0)
     contrasenia = models.CharField(max_length=500)
 
 class Menu(models.Model):
@@ -33,12 +33,12 @@ class Platillo(models.Model):
     id_Menu = models.ForeignKey(Menu, on_delete=models.SET_NULL, null=True)
     categoria = models.CharField(max_length=20, choices=CATEGORIA)
     nombre = models.CharField(default = 0, max_length= 20)
-    costo = models.IntegerField(default=0, max_length=5)
+    costo = models.IntegerField(default=0)
     descripcion = models.TextField()
     imagen = models.CharField(max_length=1000)
 
 class Tableta(models.Model):
-    id_Tableta = models.AutoField(primary_key=True)
+    id_Tableta = models.IntegerField(primary_key=True)
     id_Encargado = models.ForeignKey(Encargado_Tableta, on_delete=models.SET_NULL, null=True)
 
 class Orden(models.Model):

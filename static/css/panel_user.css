@@ -2,10 +2,9 @@
     font-family: Nunito;
     margin: 0;
     padding: 0;
-    display: grid;
-    grid-template-rows: 40% 59%;
     height: 100vh;
     row-gap: 1%;
+    background-color: #E66D22;
     /* Ajusta la altura del cuerpo a la altura de la ventana del navegador */
   }
 
@@ -16,9 +15,12 @@
     display: grid;
     grid-template-columns: 25% 50% 25%;
     grid-template-rows: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
   }
 
-  .logo{
+  .logo {
     height: 100%;
     width: 100%;
     display: grid;
@@ -27,7 +29,7 @@
     align-items: center;
   }
 
-  .panel_center{
+  .panel_center {
     height: 100%;
     width: 100%;
     display: grid;
@@ -36,7 +38,7 @@
   }
 
 
-  section {
+  .content {
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -46,16 +48,17 @@
     grid-column-gap: 2%;
   }
 
-  section div {
+  .content a {
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
   }
 
-  section div p {
+  section a p {
     width: 100%;
     height: 30%;
     background-color: #E66D22;
@@ -69,7 +72,7 @@
     text-align: center;
   }
 
-  section div img {
+  section a img {
     width: 100%;
     height: 70%;
     object-fit: cover;
@@ -104,9 +107,9 @@
     margin-bottom: 1em;
     padding: 0;
   }
-  
 
-  .buttons{
+
+  .buttons {
     height: 100%;
     padding: 10% 0;
     width: 100%;
@@ -127,10 +130,10 @@
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    
+
   }
 
-  .button_panel div {
+  .button_panel a {
     background-color: #E66D22;
     height: 100%;
     margin: 0;
@@ -143,13 +146,112 @@
     align-items: center;
     justify-content: center;
     grid-template-columns: 70% 30%;
+    text-decoration: none;
   }
 
-  .button_panel div p{
+  .button_panel div p {
     margin: 0;
     padding: 0;
   }
 
-  .button_panel div:hover {
+  .button_panel a:hover {
     background-color: #FF4500;
+  }
+
+  .entradas, .postres, .platos_fuertes, .bebidas {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 17%;
+  }
+
+  .content, .postres, .bebidas, .entradas {
+    display: none;
+  }
+
+  .card {
+    width: 23%;
+    display: grid;
+    height: 60%;
+    grid-template-rows: 40% 60%;
+    justify-content: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin: 1%;
+  }
+
+  .info {
+    width: 96%;
+    height: 96%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 2%;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .nombre_platillo {
+    width: 100%;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .descripcion_platillo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .add_bill {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+
+  .add_bill p {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #E66D22;
+    padding-left: 10%;
+  }
+
+  .add_bill a {
+    margin-left: auto;
+    background-color: #E66D22;
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 1% 12%;
+    margin-right: 5%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
   }

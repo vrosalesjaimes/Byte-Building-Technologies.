@@ -61,6 +61,81 @@
             <img src="{% static 'assets/categories/helado.jpg' %}" alt="">
         </div>
     </section>
+    <section class="entradas">
+        {% for entrada in entradas%}
+            <div class="card">
+                <img src="{{entrada.imagen}}" alt="">
+                <div class="info">
+                    <p class="nombre_platillo">{{entrada.nombre}}</p>
+                    <p class="descripcion_platillo">{{entrada.descripcion}} </p>
+                    <div class="add_bill">
+                        <p class="costo_platillo">MX${{entrada.costo}}</p>
+                        <a href="">+</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </section>
+    <section class="postres">
+        {% for postre in postres%}
+            <div class="card">
+                <img src="{{postre.imagen}}" alt="">
+                <div class="info">
+                    <p class="nombre_platillo">{{postre.nombre}}</p>
+                    <p class="descripcion_platillo">{{postre.descripcion}} </p>
+                    <div class="add_bill">
+                        <p class="costo_platillo">MX${{postre.costo}}</p>
+                        <a href="">+</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </section>
+    <section class="platos_fuertes">
+        {% for plato_fuerte in platos_fuertes%}
+            <div class="card">
+                <img src="{{plato_fuerte.imagen}}" alt="">
+                <div class="info">
+                    <p class="nombre_platillo">{{plato_fuerte.nombre}}</p>
+                    <p class="descripcion_platillo">{{plato_fuerte.descripcion}} </p>
+                    <div class="add_bill">
+                        <p class="costo_platillo">MX${{plato_fuerte.costo}}</p>
+                        <a href="">+</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </section>
+    <section class="bebidas">
+        {% for bebida in bedidas%}
+            <div class="card">
+                <img src="{{bebida.imagen}}" alt="">
+                <div class="info">
+                    <p class="nombre_platillo">{{bebida.nombre}}</p>
+                    <p class="descripcion_platillo">{{bebida.descripcion}} </p>
+                    <div class="add_bill">
+                        <p class="costo_platillo">MX${{bebida.costo}}</p>
+                        <a href="">+</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </section>
+    <section class="helados">
+        {% for helado in helados%}
+            <div class="card">
+                <img src="{{helado.imagen}}" alt="">
+                <div class="info">
+                    <p class="nombre_platillo">{{helado.nombre}}</p>
+                    <p class="descripcion_platillo">{{helado.descripcion}} </p>
+                    <div class="add_bill">
+                        <p class="costo_platillo">MX${{helado.costo}}</p>
+                        <a href="">+</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </section>
 </body>
 <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 <script src="{% static 'js/index.js'%}"></script>

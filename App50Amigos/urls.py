@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from . import views
+from .funcionalidades import  *
 from django.conf import settings
 
 app_name = 'App50Amigos'
@@ -24,5 +25,9 @@ urlpatterns = [
    path('', views.index, name='index'),
    path('administrador/', views.panelAdmin, name='panel_admin'),
    path('usuario/', views.panelUser, name='panel_user'),
-   path('registro/', views.registro, name = 'registro')
+   path('carrito/', views.carrito, name='carrito'),
+   path('votación', views.votacion, name='votacion'),
+   path('registro/', views.registro, name = 'registro'),
+   path('bienvenida/', views.fondo, name='bienvenida')
+   #path('asignacion_mesa/<parametros>')
 ]

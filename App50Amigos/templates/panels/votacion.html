@@ -1,0 +1,49 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Votación</title>
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="{% static 'assets/favicon.ico '%}" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{% static 'css/votacion.css'%}" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="{% static 'assets/Cinta/molletes.webp' %}" alt="">
+            <img src="{% static 'assets/Cinta/Chilaquiles.webp' %}" alt="">
+            <img src="{% static 'assets/Cinta/Pecado_Angelical.webp' %}" alt="">
+            <img src="{% static 'assets/Cinta/pecado.webp' %}" alt="">
+            <img src="{% static 'assets/Cinta/Platanos_Crema.webp' %}" alt="">
+            <img src="{% static 'assets/Cinta/Pecado_Aquiles.webp' %}" alt="">
+            <img src="{% static 'assets/Cinta/Pecado_Celestial.webp' %}" alt="">
+            <img src="{% static 'assets/Cinta/fresas.webp' %}" alt="">
+            <img src="{% static 'assets/Cinta/Mango_mamey.webp' %}" alt="">
+        </div>
+    </header>
+    <section class="content">
+        <div class="logo">
+            <b class="bienvenido">Votación</b>
+            <div class="div_logo">
+                <img src="{% static 'assets/logos/50amigos.png'%}" alt="">
+            </div>
+        </div>
+        <div class="initial_form" id="initial_form">
+            <p class="login">Hola, indique cuántos comensales hay en la mesa</p>
+            <p class="ident">Soy:</p>
+            <div class='links'>
+                <button id="encargado">Responsable de Tabletas</button>
+                <button id="admin">Administrador</button>
+            </div>
+        </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script src="{% static 'js/index.js'%}"></script>
+</html>
