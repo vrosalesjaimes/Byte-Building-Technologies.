@@ -1,0 +1,36 @@
+<!--templates/registration/auth_base.html-->
+<!doctype  html>
+<html  lang="en">
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<title>Listings</title>
+</head>
+<body>
+  <div  class="container">
+    <div  class="row justify-content-center">
+      <div  class="col-4">
+      <h1  class="text-center">Registro</h1>
+   
+
+      {% load crispy_forms_tags %}
+
+      
+      <div class="card">
+          <div class="card-body">
+              <h4 class="card-title">Registrar mesa</h4>
+              <form method="post" enctype="multipart/form-data">
+                  {% csrf_token %}
+                  {{form|crispy}}
+                  <input type="hidden">
+                  <button type="submit" class="btn btn-primary btn-block">registrar</button>
+      
+              </form>
+          </div>
+      </div>
+
+      </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

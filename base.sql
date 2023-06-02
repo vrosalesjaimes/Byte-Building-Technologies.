@@ -51,10 +51,18 @@ CREATE TABLE Ordenar(
  id_Platillo VARCHAR(50) REFERENCES Platillo,
  id_orden VARCHAR(50) REFERENCES Orden
 );
+CREATE TABLE Account(
+ mesa VARCHAR(10),
+ ubicacion VARCHAR(20),
+ is_staff boolean,
+ is_active boolean,
+ date_joined date,
+ 
+);
 CREATE TABLE Mesa(
  id_Mesa VARCHAR(50) PRIMARY KEY,
  ubicacion text, 
- hora time
+ contrasen text
 );
 CREATE TABLE Estar(
  id_Mesa VARCHAR(50) REFERENCES Mesa,

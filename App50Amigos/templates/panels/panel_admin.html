@@ -28,10 +28,9 @@
                     <button>
                         <img class="search_button" src="{% static 'assets/icon/search.png'%}">
                     </button>
-                </form>
-                <button class="button_panel">
-                    <p>Cerrar sesión</p>
-                </button>
+                </form>              
+                    <a class="iniciar" href="{% url 'logout'%}">Cerrar sesión</a>
+              
             </div>
             <div class="message_admin">
                 <p class="admin_title">Bienvenido de nuevo, Nombre</p>

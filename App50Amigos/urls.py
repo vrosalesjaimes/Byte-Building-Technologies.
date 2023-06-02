@@ -24,5 +24,6 @@ urlpatterns = [
    path('', views.index, name='index'),
    path('administrador/', views.panelAdmin, name='panel_admin'),
    path('usuario/', views.panelUser, name='panel_user'),
-   path('registro/', views.registro, name = 'registro')
+   path('registro/', views.registro, name = 'registro'),
+   path('register/', views.RegistrationView.as_view(), name='register'),
 ]
