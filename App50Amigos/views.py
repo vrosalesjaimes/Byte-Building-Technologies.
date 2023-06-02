@@ -11,7 +11,7 @@ def index(request):
     
     return render(request,'index.html')
 
-
+@login_required
 def paginaUno(request):
 
     return render(request, 'Pagina1.html')
