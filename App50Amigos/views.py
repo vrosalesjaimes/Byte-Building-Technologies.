@@ -57,7 +57,9 @@ def panelUser(request, id_tableta, num_mesa, ubicacion, id_order):
     return render(request, 'panels/panel_user.html',  {'entradas': entradas,
                                                        'platos_fuertes': platos_fuerte,
                                                        'bebidas': bebidas,
-                                                       'postres': postres})
+                                                       'postres': postres,
+                                                       'num_mesa': num_mesa,
+                                                       'ubicacion': ubicacion})
 
 def carrito(request):
     return render(request, 'panels/pedido.html')
