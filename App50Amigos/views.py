@@ -13,10 +13,10 @@ def index(request):
 
 
 def panelAdmin(request):
-    return render(request, 'panel_admin.html')
+    return render(request, 'panels/panel_admin.html')
 
 def panelUser(request):
-    return render(request, 'panel_user.html')
+    return render(request, 'panels/panel_user.html')
 
 def registro(request):
     data = {

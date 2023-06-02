@@ -11,45 +11,32 @@
     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
     <link rel="icon" type="image/x-icon" href="{% static 'assets/favicon.ico '%}" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="{% static 'css/panel_user.css'%}" rel="stylesheet" />
+    <link href="{% static 'css/panel_admin.css'%}" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/d5b36fd0cc.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <p>Mesa #, Ubicación</p>
+            <p>Administrador Nombre</p>
             <img class="logo_img" src="{% static 'assets/logos/50amigos.png'%}" alt="">
         </div>
         <div class="panel_center">
-            <form class="buscador" action="">
-                <input class="search_text" type="text" placeholder="Buscar platillo">
-                <button>
-                    <img class="search_button" src="{% static 'assets/icon/search.png'%}">
+            <div class="top_table">
+                <form class="buscador" action="">
+                    <input class="search_text" type="text" placeholder="Buscar platillo">
+                    <button>
+                        <img class="search_button" src="{% static 'assets/icon/search.png'%}">
+                    </button>
+                </form>
+                <button class="button_panel">
+                    <p>Cerrar sesión</p>
                 </button>
-            </form>
-            <p class="menu_title">Menú principal</p>
-            <p class="question">¿Qué deseas comer hoy?</p>
-        </div>
-        <div class="buttons">
-            <button class="button_panel">
-                <div>
-                    <p>Carrito</p>
-                    <img src="{% static 'assets/icon/shop.png'%}" alt="">
-                </div>
-            </button>
-            <button class="button_panel">
-                <div>
-                    <p>Pedidos</p> 
-                    <img src="{% static 'assets/icon/pedido.png'%}" alt="">
-                </div>
-            </button>
-            <button class="button_panel">
-                <div>
-                    <p>Helado</p> 
-                    <img src="{% static 'assets/icon/ice_cream.png'%}" alt="">
-                </div>
-            </button>
+            </div>
+            <div class="message_admin">
+                <p class="admin_title">Bienvenido de nuevo, Nombre</p>
+                <p class="question">Elige una categoria para empezar</p>
+            </div>
         </div>
     </header>
     <section class="content">
@@ -71,10 +58,11 @@
         </div>
         <div class="category_card">
             <p>Helados</p>
-            <img src="{% static 'assets/categories/helado.jpeg' %}" alt="">
+            <img src="{% static 'assets/categories/helado.jpg' %}" alt="">
         </div>
     </section>
 </body>
 <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 <script src="{% static 'js/index.js'%}"></script>
+
 </html>

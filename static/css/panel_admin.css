@@ -48,6 +48,7 @@ body {
   }
 
   .buscador {
+    visibility: hidden;
     margin: 0 5%;
     width: 90%;
     display: grid;
