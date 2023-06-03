@@ -35,13 +35,36 @@
 
             <button class="button_panel">
                 <a href="{% url 'App50Amigos:votacion'%}">
-                    <p>Helado</p> 
+                    <p>Helado</p>
                     <img src="{% static 'assets/icon/ice_cream.png'%}" alt="">
                 </a>
             </button>
-        
+
         </div>
+        <div class="buttons_menu">
+            <button class="button_panel_menu">
+                <a href="{% url 'App50Amigos:carrito'%}">
+                    <p>Carrito</p>
+                    <img src="{% static 'assets/icon/shop.png'%}" alt="">
+                </a>
+            </button>
+
+            <button class="button_panel_menu">
+                <a href="{% url 'App50Amigos:votacion'%}">
+                    <p>Helado</p>
+                    <img src="{% static 'assets/icon/ice_cream.png'%}" alt="">
+                </a>
+            </button>
+
+            <button class="button_panel_menu button_menu" id="return_menu">
+                <p>Menú</p>
+                <img src="{% static 'assets/icon/menu.png'%}" alt="">
+
+            </button>
+        </div>
+
     </header>
+    <div class="aux"></div>
     <section class="content">
         <button id="category_entrada">
             <p>Entradas</p>
@@ -62,7 +85,7 @@
     </section>
     <section class="entradas" id="entradas">
         {% for entrada in entradas%}
-            <div class="card">
+        <div class="card">
                 <img src="{{entrada.imagen}}" alt="">
                 <div class="info">
                     <p class="nombre_platillo">{{entrada.nombre}}</p>
@@ -72,55 +95,56 @@
                         <a href="">+</a>
                     </div>
                 </div>
-            </div>
+        </div>
         {% endfor %}
     </section>
     <section class="postres">
         {% for postre in postres%}
-            <div class="card">
-                <img src="{{postre.imagen}}" alt="">
-                <div class="info">
-                    <p class="nombre_platillo">{{postre.nombre}}</p>
-                    <p class="descripcion_platillo">{{postre.descripcion}} </p>
-                    <div class="add_bill">
-                        <p class="costo_platillo">MX${{postre.costo}}</p>
-                        <a href="">+</a>
-                    </div>
+        <div class="card">
+            <img src="{{postre.imagen}}" alt="">
+            <div class="info">
+                <p class="nombre_platillo">{{postre.nombre}}</p>
+                <p class="descripcion_platillo">{{postre.descripcion}} </p>
+                <div class="add_bill">
+                    <p class="costo_platillo">MX${{postre.costo}}</p>
+                    <a href="">+</a>
                 </div>
             </div>
+        </div>
         {% endfor %}
     </section>
     <section class="platos_fuertes">
         {% for plato_fuerte in platos_fuertes%}
-            <div class="card">
-                <img src="{{plato_fuerte.imagen}}" alt="">
-                <div class="info">
-                    <p class="nombre_platillo">{{plato_fuerte.nombre}}</p>
-                    <p class="descripcion_platillo">{{plato_fuerte.descripcion}} </p>
-                    <div class="add_bill">
-                        <p class="costo_platillo">MX${{plato_fuerte.costo}}</p>
-                        <a href="">+</a>
-                    </div>
+        <div class="card">
+            <img src="{{plato_fuerte.imagen}}" alt="">
+            <div class="info">
+                <p class="nombre_platillo">{{plato_fuerte.nombre}}</p>
+                <p class="descripcion_platillo">{{plato_fuerte.descripcion}} </p>
+                <div class="add_bill">
+                    <p class="costo_platillo">MX${{plato_fuerte.costo}}</p>
+                    <a href="">+</a>
                 </div>
             </div>
+        </div>
         {% endfor %}
     </section>
     <section class="bebidas">
         {% for bebida in bebidas%}
-            <div class="card">
-                <img src="{{bebida.imagen}}" alt="">
-                <div class="info">
-                    <p class="nombre_platillo">{{bebida.nombre}}</p>
-                    <p class="descripcion_platillo">{{bebida.descripcion}} </p>
-                    <div class="add_bill">
-                        <p class="costo_platillo">MX${{bebida.costo}}</p>
-                        <a href="">+</a>
-                    </div>
+        <div class="card">
+            <img src="{{bebida.imagen}}" alt="">
+            <div class="info">
+                <p class="nombre_platillo">{{bebida.nombre}}</p>
+                <p class="descripcion_platillo">{{bebida.descripcion}} </p>
+                <div class="add_bill">
+                    <p class="costo_platillo">MX${{bebida.costo}}</p>
+                    <a href="">+</a>
                 </div>
             </div>
+        </div>
         {% endfor %}
     </section>
 </body>
 <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 <script src="{% static 'js/panel.js'%}"></script>
+
 </html>

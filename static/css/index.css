@@ -15,10 +15,12 @@ body {
   }
 
   header div{
+    height: 100%;
     white-space: nowrap;
   }
 
   header img{
+    height: 100%;
     display: inline-block;
     vertical-align: top;
     object-fit: cover;
