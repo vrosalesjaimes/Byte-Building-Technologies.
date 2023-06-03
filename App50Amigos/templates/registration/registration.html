@@ -20,7 +20,7 @@
 			<div class="col-12 col-md-6 offset-md-3">
 				<div class="card">
 					<div class="card-body">
-						<h2>Registro de usuario</h2>
+						<h2>Registro de Administrador</h2>
 						<hr>
 
 						<form action="" method="post">
@@ -29,9 +29,8 @@
 							{{form | crispy}}
 							<br>
 							<a href="{% url 'App50Amigos:index' %}">Ir a página principal</a>
-							<br>
-
-							<input type="submit" name="Registrar" class="btn btn-success float-right">
+								<br>
+								<a class="iniciar" href="{% url 'App50Amigos:panel_admin'%}">Administrador</a>
 						</form>
                         
 					</div>

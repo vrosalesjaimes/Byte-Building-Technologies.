@@ -31,7 +31,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 LOGOUT_REDIRECT_URL= '/'
-LOGIN_REDIRECT_URL = 'App50Amigos:P1'
+LOGIN_REDIRECT_URL = 'App50Amigos:index'
 
 # Application definition
 
@@ -110,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-mx'
 
 TIME_ZONE = 'UTC'
 
